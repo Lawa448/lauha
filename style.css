@@ -1,23 +1,104 @@
-@font-face{
+@font-face {
     src: url(fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
     font-family: Inconsolata;
 }
+
+
 body {
     background-color: black;
+    height: auto;
+    width: 50%;
+    min-width: 400px;
+    margin: auto;
+    color: white;
+    font-family: Inconsolata, Arial, Helvetica;
+}
+
+header {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+main {
+    border: 1px solid white;
+    height: auto;
+    padding: 19px;
+    border-radius: 5px;
+    display: flow-root;
 }
 
 h1 {
-    color: white;
-    font-family: Inconsolata, Arial, Helvetica;
     font-size: 3em;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
+h2::after{
+    content: "ˎˊ˗";
+}
 p {
     font-family: Inconsolata, Arial, Helvetica;
-    color: white;
+
 }
 
-a {
-    font-family: Inconsolata, Arial, Helvetica;
-    color: white;
+pre {
+    white-space: pre-wrap;
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(254, 81, 81);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(162, 54, 54);
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+}
+
+
+
+.navi-box {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 9px;
+    margin: 3px;
+    margin-top: 15px;
+}
+
+#img1 {
+    float: right;
+    width: 100px;
+    height: auto;
+}
+
+.project-container {
+    display: grid;
+    padding: 9px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(33, 33, 33);
+}
+
+.project-box {
+    background-color: rgb(0, 0, 0);
+    /* border: 2px solid rgb(109, 109, 109); */
+    padding: 10px;
+    margin: 3px;
+}
+
+.project-title {
+    text-decoration: underline;
+    font-size: large;
+}
+.project-title::before{
+    content: ☆;
+}
+
+*::selection {
+    color: rgb(247, 190, 243);
+    background-color: rgb(85, 55, 81);
 }
