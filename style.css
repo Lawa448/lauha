@@ -1,0 +1,23 @@
+@font-face{
+    src: url(fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+    font-family: Inconsolata;
+}
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-family: Inconsolata, Arial, Helvetica;
+    font-size: 3em;
+}
+
+p {
+    font-family: Inconsolata, Arial, Helvetica;
+    color: white;
+}
+
+a {
+    font-family: Inconsolata, Arial, Helvetica;
+    color: white;
+}
