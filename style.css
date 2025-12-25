@@ -4,14 +4,14 @@
 }
 
 hr {
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
 }
 
 body {
     background-color: black;
     height: auto;
-    width: 50%;
-    min-width: 300px;
+    width: 90%;
+    max-width: 700px;
     margin: auto;
     padding-bottom: 70px;
     color: white;
@@ -28,7 +28,6 @@ main {
     height: auto;
     padding: 19px;
     border-radius: 5px;
-    display: flow-root;
 }
 
 h1 {
@@ -37,48 +36,44 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    color: rgb(255, 213, 235);
+    font-weight: 800;
+    font-size: x-large;
+    font-style: italic;
+}
+
 h2::after {
     content: "ˎˊ˗";
+    color: rgb(255, 213, 235);
 }
 
 p {
     font-family: Inconsolata, Arial, Helvetica;
-
 }
 
 pre {
     white-space: pre-wrap;
 }
 
-a:link {
-    text-decoration: none;
-    color: rgb(255, 175, 236);
-    padding: 9px;
-}
-
-a:hover {
-    text-decoration: none;
-    color: rgb(162, 54, 54);
-}
-
+a,
 a:visited {
     color: rgb(255, 255, 255);
+    text-decoration: none;
 }
-
-
 
 button {
+    cursor: pointer;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 50px;
-     padding: 5px;
-    background-color: rgb(0, 0, 0);
-    margin-top: 15px;
+    padding: 8px 12px;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    transition: background 0.2s ease-out;
 }
 
-#img1 {
-    float: right;
-    width: 100px;
-    height: auto;
+button:hover {
+    background: rgb(181, 136, 178);
 }
 
 .project-container {
@@ -108,4 +103,29 @@ button {
 *::selection {
     color: rgb(247, 190, 243);
     background-color: rgb(85, 55, 81);
+}
+
+.container-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.push-right {
+    margin-left: auto;
+}
+
+.space {
+    height: 40px;
+}
+
+@media screen and (max-width: 450px) {
+    .project-container {
+        padding: 6px;
+        background-color: rgb(33, 33, 33);
+    }
+
+    pre {
+        font-size: 10px;
+    }
 }
